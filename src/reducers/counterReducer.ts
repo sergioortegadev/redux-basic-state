@@ -5,7 +5,7 @@ interface counterActions {
 }
 const initialState: number = 0;
 
-export const conunterReducer = (state: number = initialState, action: counterActions): number => {
+export const counterReducer = (state: number = initialState, action: counterActions): number => {
   switch (action.type) {
     case INCREMENT:
       return state + 1;
@@ -18,4 +18,4 @@ export const conunterReducer = (state: number = initialState, action: counterAct
   }
 };
 
-export default conunterReducer;
+export default counterReducer;
